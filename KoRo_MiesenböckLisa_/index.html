@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Detailansicht</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Möbel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item active" href="#">Tisch</a></li>
+                            <li><a class="dropdown-item" href="#">Kommode</a></li>
+                            <li><a class="dropdown-item" href="#">Bett</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--BANNER-->
+    <img src="assets/banner.jpg" class="img-fluid" alt="Esstisch Banner">
+
+
+
+</header>
+
+<main>
+
+    <h1>Tische</h1>
+
+    <!-- BREADCRUMB-->
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Möbel</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tisch</li>
+        </ol>
+    </nav>
+
+    <!-- IMAGES -->
+    <div class="container">
+        <div class="row row-cols-3">
+            <div class="col" id="1">
+                <img src="assets/img_1.jpg" class="img-fluid furniture"  alt="Schreibtisch">
+                <p class="productName">Schreibtisch mit Metallelementen</p>
+            </div>
+            <div class="col" id="2">
+                <img src="assets/img_2.jpg" class="img-fluid furniture" alt="Wohnzimmertisch">
+                <p class="productName">Wohnzimmertisch mit Metallbeinen</p>
+            </div>
+            <div class="col" id="3">
+                <img src="assets/img_3.jpg" class="img-fluid furniture" alt="Schreibtisch">
+                <p class="productName">Schreibtisch mit Metallbeinen</p>
+            </div>
+            <div class="col" id="4">
+                <img src="assets/img_4.jpg" class="img-fluid furniture" alt="Wohnzimmertisch">
+                <p class="productName">Wohnzimmertisch Modern</p>
+            </div>
+            <div class="col" id="5">
+                <img src="assets/img_5.jpg" class="img-fluid furniture" alt="Schreibtisch">
+                <p class="productName">Vollholz Schreibtisch</p>
+            </div>
+            <div class="col" id="6">
+                <img src="assets/img_6.jpg" class="img-fluid furniture" alt="Nachttisch">
+                <p class="productName">Nachttisch weiß</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="openModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="headModal">
+                <h5 class="headerLine"></h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="container content">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-8 align-self-center">
+                        <!-- ACCORDION-->
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Schritt 1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Das ist der erste Schritt dieser Anleitung. Bitte überprüfe zuerst ob alle deine Teile vohanden sind.
+                                        </p>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckNaegel">
+                                            <label class="form-check-label" for="flexCheckNaegel">
+                                                10 Nägel
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckBretter">
+                                            <label class="form-check-label" for="flexCheckBretter">
+                                                2 Bretter
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedFeet">
+                                            <label class="form-check-label" for="flexCheckCheckedFeet">
+                                                2 Füße
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Schritt 2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Nr</th>
+                                                <th scope="col">1</th>
+                                                <th scope="col">2</th>
+                                                <th scope="col">3</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Tischplatte</td>
+                                                <td>Tischfuß</td>
+                                                <td>Tischnummer</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Kischenholz</td>
+                                                <td>Metall</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Eichenholz</td>
+                                                <td>234</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Schritt 3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Weitere Informationen findest du unter <a href="https://www.google.com">Google</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        Schritt 4
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Weitere Anleitungen findest du auch auf <a href="https://www.youtube.com">Youtube</a>
+                                        </p>
+                                        <ul>
+                                            <li>Bavaria ipsum dolor sit amet</li>
+                                            <li>Ham Gidarn samma Diandldrahn Jodler</li>
+                                            <li>Bavaria ipsum dolor sit amet</li>
+                                        </ul>
+                                         <p>griaß God beinand um Godds wujn: Singan umma des is a gmahde Wiesn, Sauwedda Diandldrahn i mog di fei Kaiwe Servas noch da Giasinga Heiwog? Midanand jo mei imma hawadere midananda Gidarn, Greichats Milli a geh.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item WohnzimmerAccordion">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                        Schritt 5
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Wichtig das du nicht vergisst, bei irgendwelchen Problemen und zu kontaktieren.
+                                            Wir sind immer für dich da und helfen dir gerne bei deinen Anliegen.
+                                        </p>
+
+                                        <p>
+                                            Nimma Watschnpladdla Watschnpladdla es und a bravs Bradwurschtsemmal Guglhupf is des liab. Um Godds wujn Zidern samma, no a Maß nomoi Trachtnhuat griaß God beinand de Sonn geh wann griagd ma nacha wos z’dringa: Fensdaln jedza hoam mim. Liberalitas Bavariae Oachkatzlschwoaf gfreit mi Schorsch, liberalitas Bavariae Biaschlegl spernzaln:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item NachttischAccordion ">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        Schritt 6
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Nimma Watschnpladdla Watschnpladdla es und a bravs Bradwurschtsemmal Guglhupf is des liab. Um Godds wujn Zidern samma, no a Maß nomoi Trachtnhuat griaß God beinand de Sonn geh wann griagd ma nacha wos z’dringa: Fensdaln jedza hoam mim. Liberalitas Bavariae Oachkatzlschwoaf gfreit mi Schorsch, liberalitas Bavariae Biaschlegl spernzaln:
+                                        </p>
+
+                                        <p>
+                                            Bavaria ipsum dolor sit amet auszutzeln Bladl da, hog di hi Foidweg! Ham Gidarn samma Diandldrahn Jodler unbandig, griaß God beinand um Godds wujn: Singan umma des is a gmahde Wiesn, Sauwedda Diandldrahn i mog di fei Kaiwe Servas noch da Giasinga Heiwog? Midanand jo mei imma hawadere midananda Gidarn, Greichats Milli a geh.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Logo</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Suche</button>
+            </form>
+        </div>
+    </nav>
+</footer>
+
+
+<!-- Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+<!-- JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
